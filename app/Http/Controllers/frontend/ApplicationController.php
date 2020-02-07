@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ContactMail;
+use App\Model\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ApplicationController extends frontendController
 {
@@ -16,10 +19,24 @@ class ApplicationController extends frontendController
         $this->data('AboutUs', $this->title('AboutUs'));
         return view($this->pagePath . 'AboutUs.AboutUs', $this->data);
     }
-    public function Contact(Request $request){
-        $this->data('Contact', $this->title('Contact'));
+    public function Contact(Request $request)
+    {
+        if ($request->isMethod('get')){
+         $this->data('Contact', $this->title('Contact'));
         return view($this->pagePath . 'Contact.Contact', $this->data);
     }
+    if ($request->isMethod('post')){
+       $data['name']= $request->name;
+       $data['email']= $request->email;
+       $data['subject']= $request->subject;
+        $data['message']= $request->message;
+        Mail::to('pontoonadcon@gmail.com')->send(new ContactMail($data));
+        Contact::create($data);
+        return redirect()->back();
+    }
+    }
+
+
     public function Services(Request $request){
         $this->data('Services', $this->title('Services'));
         return view($this->pagePath . 'Services.Services', $this->data);

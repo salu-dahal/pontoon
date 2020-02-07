@@ -27,18 +27,17 @@
 
       Route::group(['namespace' => 'backend', 'prefix' =>'laravel-admin'], function () {
           Route::any('/', 'DashboardController@index')->name('admin');
-          //route for admin-users start
-
-          Route::group(['prefix' => 'admin-users'], function () {
-              Route::any('/', 'AdminController@index')->name('admin-users');
-              Route::any('add-admin', 'AdminController@add')->name('add-admin');
-          });
-              //route for admin-users end
+         
           Route::group(['prefix' => 'slider-show'], function () {
               Route::any('/', 'SliderController@index')->name('slider-show');
               Route::any('slider-show-add','SliderController@add')->name('slider-show-add');
 
           });
 
+          Route::group(['namespace'=> 'backend'],function(){
+              Route::any('admin-login','AdminController@login')->name('admin-login');
+
+});
+      Route::any('admin-logout', 'AdminController@logout')->name('admin-logout');
 
           });

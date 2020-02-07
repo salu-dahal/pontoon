@@ -6,42 +6,19 @@
             <div class="container">
                 <div class="mu-footer-top-area">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col-md-4" style="text-align: center;">
                             <div class="mu-footer-widget">
                                 <h4>Information</h4>
                                 <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="">Features</a></li>
-                                    <li><a href="">Course</a></li>
-                                    <li><a href="">Event</a></li>
-                                    <li><a href="">Sitemap</a></li>
+                                    <li><a href="{{route('AboutUs')}}">AboutUs</a></li>
+                                    <li><a href="{{route('Services')}}">Services</a></li>
+                                    <li><a href="{{route('Contact')}}">Contact</a></li>
                                     <li><a href="">Term Of Use</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="mu-footer-widget">
-                                <h4>Student Help</h4>
-                                <ul>
-                                    <li><a href="">Get Started</a></li>
-                                    <li><a href="#">My Questions</a></li>
-                                    <li><a href="">Download Files</a></li>
-                                    <li><a href="">Latest Course</a></li>
-                                    <li><a href="">Academic News</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="mu-footer-widget">
-                                <h4>News letter</h4>
-                                <p>Get latest update, news & academic offers</p>
-                                <form class="mu-subscribe-form">
-                                    <input type="email" placeholder="Type your Email">
-                                    <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
+                     
+                        <div class="col-md-4" style="text-align: center;">
                             <div class="mu-footer-widget">
                                 <h4>Contact</h4>
                                 <address>
@@ -52,7 +29,23 @@
                                 </address>
                             </div>
                         </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <div class="mu-footer-widget">
+                                <h4>In Partnership With:</h4>
+                                
+                                        
+                                    <span>
+                                        <img src="frontend/images/GGC_LoGo2020_Light.png" height="30" width="100"/>
+                                        <a href="https://www.facebook.com/globalguidelines/"><i class="fa fa-facebook-official fa-2x" style="color: blue;"></i></a>
+                                        <a href="https://www.instagram.com/globalguidelines/"><i class="fa fa-instagram fa-2x" style="color: red;"></i></a>
+                                    </span>
+
+                                        
+             
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -89,6 +82,7 @@
 
     <!-- Custom js -->
     <script src="{{url('frontend/assets/js/custom.js')}}"></script>
+    <script type="text/javascript" src="src{{url('frontend/assets/js/Readmore.js')}}"></script>
 
 
     </body>

@@ -1886,6 +1886,7 @@ img {
   height: 500px;
 }
 
+
 /*==================
  ERROR PAGE
 ====================*/
@@ -2242,6 +2243,7 @@ img {
   #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget {
     margin-bottom: 30px;
     text-align: center;
+    
   }
 
   #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget .mu-subscribe-form input[type="email"] {
@@ -2499,3 +2501,5 @@ img {
     text-align:center;
     margin:40px 20px 20px 0px;
 }
+
+

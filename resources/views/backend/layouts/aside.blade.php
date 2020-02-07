@@ -30,16 +30,7 @@
                                 <li><a href="{{route('admin')}}"><i class="fa fa-home"></i> Dashboard</a>
 
                                 </li>
-                                <li><a><i class="fa fa-users"></i> Users <span class="fa fa-chevron-down"></span></a>
-                                    <ul class="nav child_menu">
-                                        <li><a href="{{route('add-admin')}}">Add User</a></li>
-                                        <li><a href="{{route('admin-users')}}">Show Users</a></li>
-
-                                    </ul>
-                                </li>
-                                <li><a><i class="fa fa-table"></i> Manage Users <span class="fa fa-chevron-down"></span></a>
-
-                                </li>
+                                
 
                                 <li><a><i class="fa fa-bar-chart-o"></i> Slider <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">

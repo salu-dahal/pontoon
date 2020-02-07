@@ -4,6 +4,7 @@
 <section id="mu-slider">
     @foreach ($slides as $slide)
         <a href="#"><img src="frontend/images/poon.png" style="height: 200px;">
+
     <!-- Start single slider item -->
     <div class="mu-slider-single">
         <div class="mu-slider-img">
@@ -17,6 +18,8 @@
             <h2>We Will Help You To Learn</h2>
             <a href="#" class="mu-read-more-btn">Read More</a>
         </div>
+    
+
     </div>
     <!-- Start single slider item -->
     <!-- Start single slider item -->
@@ -40,6 +43,7 @@
         <div class="mu-slider-content">
         </div>
     </div>
+
     <!-- Start single slider item -->
 </section>
 <!-- End Slider -->

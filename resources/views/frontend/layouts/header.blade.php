@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PONTOON | Home</title>
 
+   <!-- <link rel="stylesheet" type="text/css" href="{{url('frontend/assets/css/new.css')}}"> -->
 
     <!-- Font awesome -->
     <link rel="shortcut icon" href="{{url('frontend/assets/img/favicon.ico')}}" type="image/x-icon">
@@ -20,7 +21,7 @@
     <!-- Fancybox slider -->
     <link rel="stylesheet" href="{{url('frontend/assets/css/jquery.fancybox.css')}}" type="text/css" media="screen"/>
     <!-- Theme color -->
-    <link id="switcher" href="{{url('frontend/asset/css/theme-color/default-theme.css')}}" rel="stylesheet">
+    <link id="switcher" href="{{url('frontend/assets/css/theme-color/default-theme.css')}}" rel="stylesheet">
 
     <!-- Main style sheet -->
     <link href="{{url('frontend/assets/css/style.css')}}" rel="stylesheet">

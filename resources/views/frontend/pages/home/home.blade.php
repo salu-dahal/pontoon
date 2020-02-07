@@ -123,7 +123,7 @@
                     <div class="mu-latest-courses-area">
                         <!-- Start Title -->
                         <div class="mu-title">
-                            <h2>Latest Courses</h2>
+                            <h2>Services</h2>
 
                         </div>
                         <!-- End Title -->

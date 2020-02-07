@@ -5,53 +5,43 @@ namespace App\Http\Controllers\backend;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-use App\Model\Admin;
 
 class AdminController extends backendController
 {
-    public function index(Request $request)
-    {
+  
+        public function login(Request $request)
+        {
+            if ($request->isMethod('get')) {
+                return view($this->backendPath . 'login.login');
+            }
+            if ($request->isMethod('post')) {
+                $this->validate($request, [
+                    'username' => 'required',
+                    'password' => 'required'
 
-        return view($this->pagePath . 'admin.admin-users', $this->data);
+                ], [
+                    'username.required' => 'email or username field is required'
+                ]);
 
-    }
-    public function add(Request $request){
-        if ($request->isMethod('get')){
-            return view($this->pagePath . 'admin.add-admin',$this->data);
-        }
-        if ($request->isMethod('post')){
-            $this->validate($request, [
-                'name' => 'required',
-                'username' => 'required|min:3|max:20|unique:admins,username',
-                'email' => 'required|email|unique:admins,email',
-                'password' => 'required|min:3|max:20|confirmed',
-                'upload' => 'required|mimes:jpg,jpeg,png,gif'
+                $criteria = $request->username;
+                $password = $request->password;
+                $remember = isset($request->remember) ? true : false;
 
-
-            ]);
-            $admin = new Admin();
-            $admin->name= $request->name;
-            $admin->email= $request->email;
-            $admin->password= bcrypt($request->password);
-            //----image upload process
-            //image upload
-            if ($request->hasFile('upload')) {
-                $file = $request->file('upload');
-                $ext = $file->getClientOriginalExtension();
-                $imageName = md5(microtime()) . '.' . $ext;
-                $uploadPath = public_path('backend/uploads/images/admin');
-                if (!$file->move($uploadPath, $imageName)) {
-                    return redirect()->back()->with('error', 'Image not inserted');
+               /* if (Auth::guard('admin')->attempt(['username' => $criteria, 'password' => $password], $remember)) {
+                    return redirect()->intended(route('admin'));
+                } else {
+                    return redirect()->back()->with('error', 'invalid access');
                 }
+
+
+*/
+                Auth::attempt();
             }
-
-            $admin->image = $imageName;
-            if ($admin->save()) {
-                return redirect()->route('admin-users')->with('success', 'data was successfully inserted' . $request->name);
-            }
-
-
         }
+        public function logout()
+    {
+        Auth::guard('admin')->logout();
+        return redirect()->route('admin-login');
     }
 
 
