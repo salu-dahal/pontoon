@@ -22,7 +22,7 @@ class ApplicationController extends frontendController
     public function Contact(Request $request)
     {
         if ($request->isMethod('get')){
-         $this->data('Contact', $this->title('Contact'));
+         $this->data('Contact', $this->title('contacts'));
         return view($this->pagePath . 'Contact.Contact', $this->data);
     }
     if ($request->isMethod('post')){

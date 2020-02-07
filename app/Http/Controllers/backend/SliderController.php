@@ -3,48 +3,49 @@
 namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
-use App\Model\Admin;
 use App\Model\Slide;
 use Illuminate\Http\Request;
 
 class SliderController extends backendController
 {
-    public function index(Request $request)
+    public function slider(Request $request)
     {
-
-        return view($this->pagePath . 'slider.slider-show', $this->data);
-
+        $slider= Slide::all();
+        $this->data('slide',$slider);
+        $this->data('slider', $this->title( 'slider'));
+        return view($this->pagePath . 'slider.slider', $this->data);
     }
-    public function add(Request $request){
-        if ($request->isMethod('get')){
-            return view($this->pagePath . 'slider.slider-show-add',$this->data);
+    public function add_slider(Request $request)
+    {
+        if ($request->isMethod('get')) {
+            return view($this->pagePath . 'slider.add_slider', $this->data);
         }
-        if ($request->isMethod('post')){
+        if ($request->isMethod('post')) {
             $this->validate($request, [
-                'image' => 'required|mimes:jpg,jpeg,png,gif',
-                'title' => 'required|min:3|max:20|unique:slide,title',
-                'description' => 'required|varchar|unique:slide,title'
+                'title' => 'required',
+                'description' => 'required'
             ]);
+            $data =new data();
+            $data->title = $request->title;
+            $data->description = $request->description;
+    
+            //image upload
+            if ($request->hasFile('upload')) {
+                $file = $request->file('upload');
+                $ext = $file->getClientOriginalExtension();
+                $imageName = md5(microtime()) . '.' . $ext;
+                $uploadPath = public_path('backend/uploads/images');
+                if (!$file->move($uploadPath, $image)) {
+                    return redirect()->back()->with('error', 'Image not inserted');
+                }
+            }
+            $data->image = $image;
+            if ($data->save()) {
+                return redirect()->back()->with('success', 'Slider Added Successfully');
+            }
 
-            if ($request->hasFile('image')) {
-//                dd('ok');
-                $image = $request->file('image');
-                $name = time() . '.' . $image->getClientOriginalExtension();
-                $destinationPath = public_path('backend/images');
-                $image->move($destinationPath, $name);
-                $data['image'] = $name;
-            }
-               $data['image'] = $request->image;
-            $data['title'] = $request->title;
-            $data['description'] = $request->description;
-            $create = Slide::create($data);
-            if ($create)
-                return redirect()->back()->with('success', 'Slided Image Added Successfully');
-            }
+
         }
-
-
-
-
-
+    }
 }
+    

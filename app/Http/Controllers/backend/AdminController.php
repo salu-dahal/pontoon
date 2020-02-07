@@ -8,7 +8,12 @@ use Illuminate\Http\Request;
 
 class AdminController extends backendController
 {
-  
+    public function index(Request $request)
+    {
+
+        return view($this->pagePath . 'login.login', $this->data);
+
+    }
         public function login(Request $request)
         {
             if ($request->isMethod('get')) {

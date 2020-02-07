@@ -32,10 +32,10 @@
                                 </li>
                                 
 
-                                <li><a><i class="fa fa-bar-chart-o"></i> Slider <span class="fa fa-chevron-down"></span></a>
+                                <li><a><i class="fa fa-bar-chart-o"></i> slider <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="{{route('slider-show-add')}}"> slider-show-add</a></li>
-                                        <li><a href="{{route('slider-show')}}">Show slider-show</a></li>
+                                        <li><a href="{{route('add_slider')}}"> Add slider</a></li>
+                                       
 
                                     </ul>
 

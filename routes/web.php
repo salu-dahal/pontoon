@@ -19,6 +19,7 @@
     Route:: any('AboutUs','ApplicationController@AboutUs')->name('AboutUs');
     Route:: any('Contact','ApplicationController@Contact')->name('Contact');
     Route:: any('Services','ApplicationController@Services')->name('Services');
+    Route:: any('slider','SliderController@slider')->name('slider');
     Route:: any('Graphicdesigner','ApplicationController@Graphicdesigner')->name('Graphicdesigner');
     Route:: any('Motiondesigner','ApplicationController@Motiondesigner')->name('Motiondesigner');
     Route:: any('Webdevelopment','ApplicationController@Webdevelopment')->name('Webdevelopment');
@@ -28,9 +29,8 @@
       Route::group(['namespace' => 'backend', 'prefix' =>'laravel-admin'], function () {
           Route::any('/', 'DashboardController@index')->name('admin');
          
-          Route::group(['prefix' => 'slider-show'], function () {
-              Route::any('/', 'SliderController@index')->name('slider-show');
-              Route::any('slider-show-add','SliderController@add')->name('slider-show-add');
+          Route::group(['prefix' => 'slider'], function () {
+            Route::any('add_slider', 'SliderController@add_slider')->name('add_slider');
 
           });
 

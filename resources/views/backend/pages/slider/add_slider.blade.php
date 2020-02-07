@@ -11,7 +11,7 @@
                 <div class="col-md-12">
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2>Add slider-show</h2>
+                            <h2>Add slider</h2>
                             <ul class="nav navbar-right panel_toolbox">
                                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                 </li>
@@ -35,7 +35,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="col-md-9">
-                                        <form action="{{route('slider-show-add')}}" method="post" enctype="multipart/form-data">
+                                        <form action="{{route('add_slider')}}" method="post" enctype="multipart/form-data">
                                             {{csrf_field()}}
 
                                             <div class="form-group form-group-sm">
@@ -56,7 +56,7 @@
                                             </div>
 
                                             <div class="form-group form-group-sm">
-                                                <button class="btn btn-success btn-sm">Add slider-show</button>
+                                                <button class="btn btn-success btn-sm">Add slider</button>
                                             </div>
 
                                         </form>
