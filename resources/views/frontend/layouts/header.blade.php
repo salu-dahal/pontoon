@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PONTOON | Home</title>
-
-   <!-- <link rel="stylesheet" type="text/css" href="{{url('frontend/assets/css/new.css')}}"> -->
+    <!--Display Hover-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Font awesome -->
     <link rel="shortcut icon" href="{{url('frontend/assets/img/favicon.ico')}}" type="image/x-icon">

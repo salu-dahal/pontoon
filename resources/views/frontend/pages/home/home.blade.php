@@ -1,6 +1,8 @@
 @extends('frontend.master.master')
 @section('content')
-
+<video autoplay muted loop style="height: 100%; width: 100%;"> 
+            <source src="frontend/images/video.mp4" type="video/mp4">
+        </video>
     <section id="mu-slider">
         <!-- Start single slider item -->
         <div class="mu-slider-single">
@@ -254,7 +256,7 @@
     <!-- End latest course section -->
 
 
-    !-- Start our teacher -->
+    <!-- Start our teacher -->
     <section id="mu-our-teacher">
         <div class="container">
             <div class="row">

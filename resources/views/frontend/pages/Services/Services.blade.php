@@ -1,10 +1,41 @@
 @extends('frontend.master.master')
 @section('content')
-<!-- Start from blog -->
-  <section id="mu-from-blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
+
+<section id="mu-contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="mu-contact-area">
+					<!-- start title -->
+					<div class="mu-title">
+						<h2>We Provide??</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="w3-container">
+			<div class="w3-display-container w3-hover-opacity" style="width:100%">
+				<img src="frontend/images/img.jpg" width="100%" height="500">
+				<div class="w3-display-topmiddle w3-display-hover w3-xxlarge">
+					<div class="w3-animate-fade-in">
+						<span class="w3-button w3-hover-purple">Facilities:</span>
+					</div>
+				</div>				
+				<div class="w3-display-middle w3-display-hover w3-medium">
+					<div class="w3-animate-fade-in" style="text-align: center">
+						<!--<span class="w3-padding w3-display-topmiddle">Facilities Like</span>-->
+						<span class="w3-button w3-round w3-hover-green">Digital Marketing</span>
+						<span class="w3-button w3-round w3-hover-green">Motion Design</span>
+						<span class="w3-button w3-round w3-hover-green">Graphics Design</span>
+						<span class="w3-button w3-round w3-hover-green">Web Development</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+      <div class="col-md-6">
           <div class="mu-from-blog-area">
            
             <!-- start from blog content   -->
