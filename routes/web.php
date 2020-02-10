@@ -31,10 +31,11 @@
          
           Route::group(['prefix' => 'slider'], function () {
             Route::any('add_slider', 'SliderController@add_slider')->name('add_slider');
+            Route::any('edit_slider/{id?}', 'SliderController@edit_slider')->name('edit_slider');
 
           });
 
-          Route::group(['namespace'=> 'backend'],function(){
+          Route::group(['namespace' => 'backend'],function(){
               Route::any('admin-login','AdminController@login')->name('admin-login');
 
 });

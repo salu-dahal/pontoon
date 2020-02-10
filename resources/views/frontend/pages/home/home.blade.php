@@ -8,7 +8,7 @@
         <div class="mu-slider-single">
             <div class="mu-slider-img">
                 <figure>
-                    <img src="frontend/images/poon.png" alt="img" style="height: 200px;">
+                    <img src="frontend/images/Digital_Marketing&Advertising-02.jpg" alt="img" style="height: 200px;">
                 </figure>
             </div>
             <div class="mu-slider-content">
@@ -23,7 +23,7 @@
         <div class="mu-slider-single">
             <div class="mu-slider-img">
                 <figure>
-                    <img src="frontend/images/poon.png" alt="img">
+                    <img src="frontend/images/Branding&Creative_Design-04.jpg" alt="img">
                 </figure>
             </div>
             <div class="mu-slider-content">
