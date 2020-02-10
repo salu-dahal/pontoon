@@ -25,7 +25,7 @@
                             <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                         </ul>
                     </li>
-{{--
+
                     <li role="presentation" class="dropdown">
                         <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                             <i class="fa fa-envelope-o"></i>
@@ -86,7 +86,7 @@
                                         <strong>See All Alerts</strong>
                                         <i class="fa fa-angle-right"></i>
                                     </a>
-                                </div>--}}
+                                </div>
                             </li>
                         </ul>
                     </li>
