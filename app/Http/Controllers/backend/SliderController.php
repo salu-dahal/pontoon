@@ -15,33 +15,7 @@ class SliderController extends backendController
         $this->data('slider', $this->title( 'slider'));
         return view($this->pagePath . 'slider.slider', $this->data);
     }
-    public function add_slider(Request $request)
-    {
-        if ($request->isMethod('get')) {
-            return view($this->pagePath . 'slider.add_slider', $this->data);
-        }
-        if ($request->isMethod('post')) {
-            $request->validate([
-                'title' => 'required',
-                'description' => 'required'
-            ]);
-            if ($request->hasFile('image')) {
-//                dd('ok');
-                $image = $request->file('image');
-                $name = time() . '.' . $image->getClientOriginalExtension();
-                $destinationPath = public_path('/images/');
-                $title = $request->title;
-                $image->move($destinationPath, $title);
-                $data['image'] = $title;
-            }
-            $data['title'] = $request->title;
-            $data['description'] = $request->description;
-            $create = Slide::create($data);
-            if ($create) {
-                return redirect()->back()->with('success', 'Slide Added Successfully');
-            }
-        }
-    }
+
 
     public function edit_slider(Request $request)
     {
