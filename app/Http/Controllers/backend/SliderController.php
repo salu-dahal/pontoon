@@ -30,6 +30,7 @@ class SliderController extends backendController
                 $image = $request->file('image');
                 $name = time() . '.' . $image->getClientOriginalExtension();
                 $destinationPath = public_path('/images/');
+                $title = $request->title;
                 $image->move($destinationPath, $title);
                 $data['image'] = $title;
             }

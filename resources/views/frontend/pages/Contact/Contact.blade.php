@@ -1,3 +1,4 @@
+@php $title ="Pontoon|Contact" @endphp
 @extends('frontend.master.master')
 @section('content')
  <!-- Start contact  -->
