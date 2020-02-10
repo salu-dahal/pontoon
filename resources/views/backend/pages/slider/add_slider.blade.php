@@ -71,60 +71,61 @@
                         <div class="col-md-12">
 
 
-    <div class="card">
-    <div class="card-header">
-    <h5 class="card-title">All Slider</h5>
-    </div>
-    <!-- /.card-header -->
-    <div class="card-body">
+<div class="card">
+<div class="card-header">
+<h5 class="card-title">All Slider</h5>
+</div>
+<!-- /.card-header -->
+<div class="card-body">
 
-        <!-- /.row -->
-        <table id="user" class="table table-bordered table-sm">
-            <thead>
+    <!-- /.row -->
+    <table id="user" class="table table-bordered table-sm">
+        <thead>
+        <tr>
+            <th>Sn</th>
+            <th>title</th>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+
+         @foreach($slides as $key => $value)
             <tr>
-                <th>Sn</th>
-                <th>title</th>
-                <th>Image</th>
-                <th>Description</th>
-                <th>Action</th>
-            </tr>
-            </thead>
-            <tbody>
+                    <td>{{++$key}}</td>
+                <td><img src="{{asset('images/'.$value->image)}}" width="80px"></td>
+                <td>{{$value->title}}</td>
+                <td>{!! $value->description !!}</td>
+                                         
+             </tr>
+         @endforeach
+        </tbody>
+    </table>
+</div>
 
-             @foreach($slider as $key => $value)
-                <tr>
-                        <td>{{++$key}}</td>
-                    <td><img src="{{asset('images/'.$value->image)}}" width="80px"></td>
-                    <td>{{$value->title}}</td>
-                    <td>{!! $value->description !!}</td>
-                                             
-                 </tr>
-             @endforeach
-            </tbody>
-        </table>
-    </div>
+<!-- ./card-body -->
 
-    <!-- ./card-body -->
+<!-- /.card-footer -->
+                        </div>
+                        </div>
+                        <!-- /.col -->
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
 
-    <!-- /.card-footer -->
-                            </div>
-                            </div>
-                            <!-- /.col -->
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>*/
 
-    <!-- /page content -->
+<!-- /page content -->
 
+                     
 @stop
 

@@ -32,7 +32,7 @@ class ApplicationController extends frontendController
        $data['email']= $request->email;
        $data['subject']= $request->subject;
         $data['message']= $request->message;
-        Mail::to('pontoonadcon@gmail.com')->send(new ContactMail($data));
+        Mail::to('abibhandari7@gmail.com')->send(new ContactMail($data));
         Contact::create($data);
         return redirect()->back();
     }
