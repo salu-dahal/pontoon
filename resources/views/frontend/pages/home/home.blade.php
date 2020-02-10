@@ -1,3 +1,4 @@
+@php $title ="Pontoon|Home" @endphp
 @extends('frontend.master.master')
 @section('content')
 <video autoplay muted loop style="height: 100%; width: 100%;"> 

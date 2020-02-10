@@ -1,3 +1,4 @@
+@php $title ="Pontoon|Services" @endphp
 @extends('frontend.master.master')
 @section('content')
 
