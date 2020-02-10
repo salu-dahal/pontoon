@@ -16,6 +16,7 @@ class SliderController extends backendController
         $this->data('slider', $this->title( 'slider'));
         return view($this->pagePath . 'slider.slider', $this->data);
     }
+<<<<<<< HEAD
     public function add_slider(Request $request)
     {
         if ($request->isMethod('get')) {
@@ -27,6 +28,9 @@ class SliderController extends backendController
                 'description' => 'required'
             ]);
   
+=======
+
+>>>>>>> 074604faaabc903d3d0fb38081f4e8152c825a5c
 
             $data= $request->all();
             $slide=new Slide();
