@@ -36,10 +36,6 @@
 
           });
 
-          Route::group(['namespace' => 'backend'],function(){
-              Route::any('admin-login','AdminController@login')->name('admin-login');
-
-});
       Route::any('admin-logout', 'AdminController@logout')->name('admin-logout');
 
           });
