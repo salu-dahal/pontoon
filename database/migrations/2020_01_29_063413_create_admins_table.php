@@ -17,6 +17,7 @@ class CreateAdminsTable extends Migration
             $table->bigIncrements('id');
             $table->string('username')->unique;
             $table->string('email')->unique;
+            $table->string('usertype')->unique;
             $table->string('password')->unique;
             $table->rememberToken();
             $table->timestamps();
