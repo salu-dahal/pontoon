@@ -16,7 +16,8 @@
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-expanded="false"><i class="fa fa-wrench"></i></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="#">Settings 1</a>
                                     </li>
@@ -45,12 +46,14 @@
 
                                         <div class="form-group form-group-sm">
                                             <label for="title">title</label>
-                                            <input type="text" name="title" id="title" value="{{old('title')}}" placeholder="Enter your title" class="form-control">
+                                            <input type="text" name="title" id="title" value="{{old('title')}}"
+                                                placeholder="Enter your title" class="form-control">
                                             <a href="" style="color:red;">{{$errors->first('title')}}</a>
                                         </div>
                                         <div class="form-group form-group-sm">
                                             <label for="order">description</label>
-                                            <input type="text" name="description" id="description" placeholder="Enter your description" class="form-control">
+                                            <input type="text" name="description" id="description"
+                                                placeholder="Enter your description" class="form-control">
                                             <a href="" style="color:red;">{{$errors->first('description')}}</a>
                                         </div>
 
@@ -73,16 +76,8 @@
             </div>
         </div>
     </div>
-</div>
-</div>
-</div>
 
-</div>
-</div>
-</div>
-</div>
-</div>
-//page content
+    //page content
 
 
-@stop
+    @stop

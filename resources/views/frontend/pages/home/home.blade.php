@@ -12,7 +12,12 @@
                     <img src="frontend/images/Digital_Marketing&Advertising-02.jpg" alt="img" style="height: 200px;">
                 </figure>
             </div>
-           
+            <!-- <div class="mu-slider-content">
+                <h4>Welcome To </h4>
+                <span></span>
+                <h2>We Will Help You To Learn</h2>
+                <a href="#" class="mu-read-more-btn">Read More</a>
+            </div> -->
         </div>
         <!-- Start single slider item -->
         <!-- Start single slider item -->
