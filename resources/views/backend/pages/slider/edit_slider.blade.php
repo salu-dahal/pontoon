@@ -8,7 +8,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                            <h2>edit_sliderr</h2>
+                            <h2>Edit slider</h2>
                             <ul class="nav navbar-right panel_toolbox">
                                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                 </li>
@@ -44,23 +44,26 @@
                                 <form method="POST" action="{{route('edit_slider')}}"
                                       accept-charset="UTF-8" class=""
                                       enctype="multipart/form-data">
-                                    <input type="hidden" name="id" value="{{$slider->id}}">
+                                    <input type="hidden" name="id" value="{{$slide->id}}">
                                     @csrf
 
                                         <div class="box-body">
-                                            <div class="row">
+                                        <div class="row">
                                                 <div class="col-sm-4">
                                                     <div class="form-group ">
-                                                        <label for="name" class="control-label">Title *</label>
-                                                        <input class="form-control" value="{{$slider->title}}"
-                                                               name="name" type="text" id="name">
+                                                        <label for="name" class="control-label"> Title
+                                                            *</label>
+                                                        <textarea id="title"
+                                                                  name="title"
+                                                                  class="form-control">{{$slide->title}}</textarea>
                                                     </div>
                                                 </div>
+                                            </div>
                                                 <div class="col-sm-4">
 
                                                     <div class="form-group ">
                                                         <label for="caption" class="control-label">Current Image</label>
-                                                        <img src="{{url('images/'.$slider->image)}}"
+                                                        <img src="{{url('images/'.$slide->image)}}"
                                                              width="60px"
                                                              id="caption">
                                                         <label for="caption" class="control-label">Image</label>
@@ -69,20 +72,20 @@
                                                     </div>
                                                 </div>
 
-                                              
-
-                                            </div>
-                                            <div class="row">
+                                                <div class="row">
                                                 <div class="col-sm-12">
                                                     <div class="form-group ">
                                                         <label for="name" class="control-label"> Description
                                                             *</label>
                                                         <textarea id="desc"
                                                                   name="description"
-                                                                  class="form-control">{{$slider->description}}</textarea>
+                                                                  class="form-control">{{$slide->description}}</textarea>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            </div>
+                                          
                                         </div>
 
                                         <button type="submit" class="btn btn-primary">Update Slider</button>
