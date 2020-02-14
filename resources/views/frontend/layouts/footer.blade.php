@@ -2,7 +2,7 @@
     <!-- Start footer -->
     <footer id="mu-footer">
         <!-- start footer top -->
-        <div class="mu-footer-top">
+        <div class="mu-footer-top" style="background-color:black">
             <div class="container">
                 <div class="mu-footer-top-area">
                     <div class="row">
