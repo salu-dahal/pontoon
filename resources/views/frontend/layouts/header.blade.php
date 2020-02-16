@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{{url('frontend/assets/css/jquery.fancybox.css')}}" type="text/css" media="screen"/>
     <!-- Theme color -->
     <link id="switcher" href="{{url('frontend/assets/css/theme-color/default-theme.css')}}" rel="stylesheet">
+  
 
     <!-- Main style sheet -->
     <link href="{{url('frontend/assets/css/style.css')}}" rel="stylesheet">

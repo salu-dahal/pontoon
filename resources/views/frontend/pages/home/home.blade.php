@@ -5,6 +5,8 @@
     <source src="frontend/images/video.mp4" type="video/mp4">
 </video>
 
+
+
 <section id="mu-slider">
     <!-- Start single slider item -->
     <div class="mu-slider-single">
