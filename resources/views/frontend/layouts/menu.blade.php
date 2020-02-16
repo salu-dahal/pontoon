@@ -20,7 +20,7 @@
                 <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                <ul id="top-menu" class="nav navbar-nav navbar-right main-nav" >
                     <li><a href="{{route('Home')}}">Home</a></li>
                     <li><a href="{{route('AboutUs')}}">AboutUs</a></li>
                     <li><a href="{{route('Contact')}}">Contact</a></li>

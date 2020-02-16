@@ -1,84 +1,83 @@
 @php $title ="Pontoon|Home" @endphp
 @extends('frontend.master.master')
 @section('content')
-<video autoplay muted loop style="height: 100%; width: 100%;"> 
-            <source src="frontend/images/video.mp4" type="video/mp4">
-        </video>
-    <section id="mu-slider">
-        <!-- Start single slider item -->
-        <div class="mu-slider-single">
-            <div class="mu-slider-img">
-                <figure>
-                    <img src="frontend/images/Digital_Marketing&Advertising-02.jpg" alt="img" style="height: 200px;">
-                </figure>
-            </div>
-            <!-- <div class="mu-slider-content">
+<video autoplay muted loop style="height: 100%; width: 100%;">
+    <source src="frontend/images/video.mp4" type="video/mp4">
+</video>
+<section id="mu-slider">
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+        <div class="mu-slider-img">
+            <figure>
+                <img src="frontend/images/Digital_Marketing&Advertising-02.jpg" alt="img" style="height: 200px;">
+            </figure>
+        </div>
+        <!-- <div class="mu-slider-content">
                 <h4>Welcome To </h4>
                 <span></span>
                 <h2>We Will Help You To Learn</h2>
                 <a href="#" class="mu-read-more-btn">Read More</a>
             </div> -->
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+        {{-- <div class="mu-slider-img"> --}}
+            <img src="frontend/images/Branding&Creative_Design-04.jpg" alt="img" height="400" width="100%">
+
+        {{-- </div>
+        <div class="mu-slider-content">
+        </div> --}}
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+        <div class="mu-slider-img">
+            <figure>
+                <img src="frontend/images/poon.png" alt="img">
+            </figure>
         </div>
-        <!-- Start single slider item -->
-        <!-- Start single slider item -->
-        <div class="mu-slider-single">
-            <div class="mu-slider-img">
-                <figure>
-                    <img src="frontend/images/Branding&Creative_Design-04.jpg" alt="img">
-                </figure>
-            </div>
-            <div class="mu-slider-content">
-            </div>
+        <div class="mu-slider-content">
         </div>
-        <!-- Start single slider item -->
-        <!-- Start single slider item -->
-        <div class="mu-slider-single">
-            <div class="mu-slider-img">
-                <figure>
-                    <img src="frontend/images/poon.png" alt="img">
-                </figure>
-            </div>
-            <div class="mu-slider-content">
-            </div>
-        </div>
-        <!-- Start single slider item -->
-    </section>
-    <!-- End Slider -->
-    <!-- Start service  -->
-    <section id="mu-service">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="mu-service-area">
-                        <!-- Start single service -->
-                        <div class="mu-service-single">
-                            <span class="fa fa-book"></span>
-                            <h3>Online Services</h3>
-                            <p></p>
-                        </div>
-                        <!-- Start single service -->
-                        <!-- Start single service -->
-                        <div class="mu-service-single">
-                            <span class="fa fa-users"></span>
-                            <h3>Expert Guiders</h3>
-                            <p></p>
-                        </div>
-                        <!-- Start single service -->
-                        <!-- Start single service -->
-                        <div class="mu-service-single">
-                            <span class="fa fa-table"></span>
-                            <h3>Best Environment</h3>
-                            <p></p>
-                        </div>
-                        <!-- Start single service -->
+    </div>
+    <!-- Start single slider item -->
+</section>
+<!-- End Slider -->
+<!-- Start service  -->
+<section id="mu-service">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="mu-service-area">
+                    <!-- Start single service -->
+                    <div class="mu-service-single">
+                        <span class="fa fa-book"></span>
+                        <h3>Online Services</h3>
+                        <p></p>
                     </div>
+                    <!-- Start single service -->
+                    <!-- Start single service -->
+                    <div class="mu-service-single">
+                        <span class="fa fa-users"></span>
+                        <h3>Expert Guiders</h3>
+                        <p></p>
+                    </div>
+                    <!-- Start single service -->
+                    <!-- Start single service -->
+                    <div class="mu-service-single">
+                        <span class="fa fa-table"></span>
+                        <h3>Best Environment</h3>
+                        <p></p>
+                    </div>
+                    <!-- Start single service -->
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End service  -->
+    </div>
+</section>
+<!-- End service  -->
 
- {{--   <!-- Start about us -->
+{{--   <!-- Start about us -->
     <section id="mu-about-us">
         <div class="container">
             <div class="row">
@@ -118,241 +117,251 @@
     </section>
     <!-- End about us -->
 --}}
-    <!-- Start latest course section -->
-    <section id="mu-latest-courses">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="mu-latest-courses-area">
-                        <!-- Start Title -->
-                        <div class="mu-title">
-                            <h2>Services</h2>
+<!-- Start latest course section -->
+<section id="mu-latest-courses">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="mu-latest-courses-area">
+                    <!-- Start Title -->
+                    <div class="mu-title">
+                        <h2>Services</h2>
 
-                        </div>
-                        <!-- End Title -->
-                        <!-- Start latest course content -->
-                        <div id="mu-latest-course-slide" class="mu-latest-courses-content">
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <div class="mu-latest-course-single">
-                                    <figure class="mu-latest-course-img">
-                                        <figcaption class="mu-latest-course-imgcaption">
-                                            <a href="#">Agriculture and Veterinary Machine</a>
-                                            <span><i class="fa fa-clock-o"></i>90Days</span>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="mu-latest-course-single-content">
-                                        <p>Don't think it is just about 'working the land'. You'll study land-based industries, such as rural management, animal medicine, GM crops, food security and climate change.
-
-                                            SUBJECT INCLUDES
-                                            AgricultureFarm ManagementHorticulturePlant and Crop SciencesVeterinary Medicine.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <div class="mu-latest-course-single">
-                                    <figure class="mu-latest-course-img">
-                                        <figcaption class="mu-latest-course-imgcaption">
-                                            <a href="#">Architecture and Construction</a>
-                                            <span><i class="fa fa-clock-o"></i>75Days</span>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="mu-latest-course-single-content">
-                                        <p>Use your imagination for the design of buildings and spaces in people's everyday
-                                            life. It involves the study of sciences, humanities, fine and applied arts
-                                            to be applied on urban planning.
-
-                                            SUBJECT INCLUDES
-                                            ArchitectureBuilt EnvironmentConstructionMaintenance ServicesPlanningProperty
-                                            ManagementSurveying.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <div class="mu-latest-course-single">
-                                    <figure class="mu-latest-course-img">
-                                        <figcaption class="mu-latest-course-imgcaption">
-                                            <a href="#">Computer Science and IT</a>
-                                            <span><i class="fa fa-clock-o"></i>45Days</span>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="mu-latest-course-single-content">
-                                        <p>Computer Science and IT
-                                            Want to be at the edge of technological innovation? Learn about the design, production and use of computing, information systems and software engineering.
-                                            SUBJECT INCLUDES
-                                            Computer ScienceComputingITMultimediaSoftware</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <div class="mu-latest-course-single">
-                                    <figure class="mu-latest-course-img">
-                                        <figcaption class="mu-latest-course-imgcaption">
-                                            <a href="#">Engineering</a>
-                                            <span><i class="fa fa-clock-o"></i>90Days</span>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="mu-latest-course-single-content">
-
-                                        <p>The practical and innovative application of maths and sciences will be used to design,
-                                            develop and maintain infrastructures, products and systems on a large scale.
-
-                                            SUBJECT INCLUDES
-                                            Aerospace EngineeringBiomedical EngineeringChemical and Materials EngineeringCivil EngineeringElectrical </p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <div class="mu-latest-course-single">
-                                    <figure class="mu-latest-course-img">
-                                        <figcaption class="mu-latest-course-imgcaption">
-                                            <a href="#">Health amd Medicine </a>
-                                            <span><i class="fa fa-clock-o"></i>75Days</span>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="mu-latest-course-single-content">
-
-                                        <p>You will study all aspects of the human body for the diagnose,
-                                            treatment and assessment of patients' health needs. You'll have a hands-on
-                                            learning approach for medicine and surgery.
-
-                                            SUBJECT INCLUDES
-                                            Complementary HealthCounsellingDentistryHealth StudiesHealth and
-                                            SafetyMedicineMidwiferyNursingNutrition </p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <div class="mu-latest-course-single">
-                                    <figure class="mu-latest-course-img">
-                                        <figcaption class="mu-latest-course-imgcaption">
-                                            <a href="#">Travel and Hospitality</a>
-                                            <span><i class="fa fa-clock-o"></i>45Days</span>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="mu-latest-course-single-content">
-
-                                        <p>You will study hospitality and travel industry, and its global impact.
-                                            You will have the possibility to make your passion for travel your career and
-                                            possibly develop your own business.
-
-                                            SUBJECT INCLUDES
-                                            AviationCateringFood and Drink ProductionHospitalityHotel ManagementLeisure
-                                            ManagementTravel and Tourism</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End latest course content -->
                     </div>
+                    <!-- End Title -->
+                    <!-- Start latest course content -->
+                    <div id="mu-latest-course-slide" class="mu-latest-courses-content">
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <div class="mu-latest-course-single">
+                                <figure class="mu-latest-course-img">
+                                    <figcaption class="mu-latest-course-imgcaption">
+                                        <a href="#">Agriculture and Veterinary Machine</a>
+                                        <span><i class="fa fa-clock-o"></i>90Days</span>
+                                    </figcaption>
+                                </figure>
+                                <div class="mu-latest-course-single-content">
+                                    <p>Don't think it is just about 'working the land'. You'll study land-based
+                                        industries, such as rural management, animal medicine, GM crops, food security
+                                        and climate change.
+
+                                        SUBJECT INCLUDES
+                                        AgricultureFarm ManagementHorticulturePlant and Crop SciencesVeterinary
+                                        Medicine.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <div class="mu-latest-course-single">
+                                <figure class="mu-latest-course-img">
+                                    <figcaption class="mu-latest-course-imgcaption">
+                                        <a href="#">Architecture and Construction</a>
+                                        <span><i class="fa fa-clock-o"></i>75Days</span>
+                                    </figcaption>
+                                </figure>
+                                <div class="mu-latest-course-single-content">
+                                    <p>Use your imagination for the design of buildings and spaces in people's everyday
+                                        life. It involves the study of sciences, humanities, fine and applied arts
+                                        to be applied on urban planning.
+
+                                        SUBJECT INCLUDES
+                                        ArchitectureBuilt EnvironmentConstructionMaintenance ServicesPlanningProperty
+                                        ManagementSurveying.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <div class="mu-latest-course-single">
+                                <figure class="mu-latest-course-img">
+                                    <figcaption class="mu-latest-course-imgcaption">
+                                        <a href="#">Computer Science and IT</a>
+                                        <span><i class="fa fa-clock-o"></i>45Days</span>
+                                    </figcaption>
+                                </figure>
+                                <div class="mu-latest-course-single-content">
+                                    <p>Computer Science and IT
+                                        Want to be at the edge of technological innovation? Learn about the design,
+                                        production and use of computing, information systems and software engineering.
+                                        SUBJECT INCLUDES
+                                        Computer ScienceComputingITMultimediaSoftware</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <div class="mu-latest-course-single">
+                                <figure class="mu-latest-course-img">
+                                    <figcaption class="mu-latest-course-imgcaption">
+                                        <a href="#">Engineering</a>
+                                        <span><i class="fa fa-clock-o"></i>90Days</span>
+                                    </figcaption>
+                                </figure>
+                                <div class="mu-latest-course-single-content">
+
+                                    <p>The practical and innovative application of maths and sciences will be used to
+                                        design,
+                                        develop and maintain infrastructures, products and systems on a large scale.
+
+                                        SUBJECT INCLUDES
+                                        Aerospace EngineeringBiomedical EngineeringChemical and Materials
+                                        EngineeringCivil EngineeringElectrical </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <div class="mu-latest-course-single">
+                                <figure class="mu-latest-course-img">
+                                    <figcaption class="mu-latest-course-imgcaption">
+                                        <a href="#">Health amd Medicine </a>
+                                        <span><i class="fa fa-clock-o"></i>75Days</span>
+                                    </figcaption>
+                                </figure>
+                                <div class="mu-latest-course-single-content">
+
+                                    <p>You will study all aspects of the human body for the diagnose,
+                                        treatment and assessment of patients' health needs. You'll have a hands-on
+                                        learning approach for medicine and surgery.
+
+                                        SUBJECT INCLUDES
+                                        Complementary HealthCounsellingDentistryHealth StudiesHealth and
+                                        SafetyMedicineMidwiferyNursingNutrition </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <div class="mu-latest-course-single">
+                                <figure class="mu-latest-course-img">
+                                    <figcaption class="mu-latest-course-imgcaption">
+                                        <a href="#">Travel and Hospitality</a>
+                                        <span><i class="fa fa-clock-o"></i>45Days</span>
+                                    </figcaption>
+                                </figure>
+                                <div class="mu-latest-course-single-content">
+
+                                    <p>You will study hospitality and travel industry, and its global impact.
+                                        You will have the possibility to make your passion for travel your career and
+                                        possibly develop your own business.
+
+                                        SUBJECT INCLUDES
+                                        AviationCateringFood and Drink ProductionHospitalityHotel ManagementLeisure
+                                        ManagementTravel and Tourism</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End latest course content -->
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End latest course section -->
+    </div>
+</section>
+<!-- End latest course section -->
 
 
-    <!-- Start our teacher -->
-    <section id="mu-our-teacher">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-our-teacher-area">
-                        <!-- begain title -->
-                        <div class="mu-title">
-                            <h2>Guiders</h2>
-                            <p>Pontoon is the advertising company whhich helps in every secctors. </p>
-                        </div>
-                        <!-- end title -->
-                        <!-- begain our teacher content -->
-                        <div class="mu-our-teacher-content">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-3  col-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="assets/img/teachers/teacher-01.png" alt="teacher img">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="#"><span class="fa fa-facebook"></span></a>
-                                                <a href="#"><span class="fa fa-twitter"></span></a>
-                                                <a href="#"><span class="fa fa-linkedin"></span></a>
-                                                <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>Aaditya Shah</h4>
-                                            <span>gghjkiguf</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
+<!-- Start our teacher -->
+<section id="mu-our-teacher">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-our-teacher-area">
+                    <!-- begain title -->
+                    <div class="mu-title">
+                        <h2>Guiders</h2>
+                        <p>Pontoon is the advertising company whhich helps in every secctors. </p>
+                    </div>
+                    <!-- end title -->
+                    <!-- begain our teacher content -->
+                    <div class="mu-our-teacher-content">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3  col-sm-6">
+                                <div class="mu-our-teacher-single">
+                                    <figure class="mu-our-teacher-img">
+                                        <img src="assets/img/teachers/teacher-01.png" alt="teacher img">
+                                        <div class="mu-our-teacher-social">
+                                            <a href="#"><span class="fa fa-facebook"></span></a>
+                                            <a href="#"><span class="fa fa-twitter"></span></a>
+                                            <a href="#"><span class="fa fa-linkedin"></span></a>
+                                            <a href="#"><span class="fa fa-google-plus"></span></a>
                                         </div>
+                                    </figure>
+                                    <div class="mu-ourteacher-single-content">
+                                        <h4>Aaditya Shah</h4>
+                                        <span>gghjkiguf</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod
+                                            pariatur recusandae odio dignissimos. Eligendi.</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="assets/img/teachers/teacher-02.png" alt="teacher img">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="#"><span class="fa fa-facebook"></span></a>
-                                                <a href="#"><span class="fa fa-twitter"></span></a>
-                                                <a href="#"><span class="fa fa-linkedin"></span></a>
-                                                <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>Amit Shah</h4>
-                                            <span>jhgfgh</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="mu-our-teacher-single">
+                                    <figure class="mu-our-teacher-img">
+                                        <img src="assets/img/teachers/teacher-02.png" alt="teacher img">
+                                        <div class="mu-our-teacher-social">
+                                            <a href="#"><span class="fa fa-facebook"></span></a>
+                                            <a href="#"><span class="fa fa-twitter"></span></a>
+                                            <a href="#"><span class="fa fa-linkedin"></span></a>
+                                            <a href="#"><span class="fa fa-google-plus"></span></a>
                                         </div>
+                                    </figure>
+                                    <div class="mu-ourteacher-single-content">
+                                        <h4>Amit Shah</h4>
+                                        <span>jhgfgh</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod
+                                            pariatur recusandae odio dignissimos. Eligendi.</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="assets/img/teachers/teacher-03.png" alt="teacher img">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="#"><span class="fa fa-facebook"></span></a>
-                                                <a href="#"><span class="fa fa-twitter"></span></a>
-                                                <a href="#"><span class="fa fa-linkedin"></span></a>
-                                                <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>Sushil Malla</h4>
-                                            <span>Motion Designer</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="mu-our-teacher-single">
+                                    <figure class="mu-our-teacher-img">
+                                        <img src="assets/img/teachers/teacher-03.png" alt="teacher img">
+                                        <div class="mu-our-teacher-social">
+                                            <a href="#"><span class="fa fa-facebook"></span></a>
+                                            <a href="#"><span class="fa fa-twitter"></span></a>
+                                            <a href="#"><span class="fa fa-linkedin"></span></a>
+                                            <a href="#"><span class="fa fa-google-plus"></span></a>
                                         </div>
+                                    </figure>
+                                    <div class="mu-ourteacher-single-content">
+                                        <h4>Sushil Malla</h4>
+                                        <span>Motion Designer</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod
+                                            pariatur recusandae odio dignissimos. Eligendi.</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="assets/img/teachers/teacher-04.png" alt="teacher img">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="#"><span class="fa fa-facebook"></span></a>
-                                                <a href="#"><span class="fa fa-twitter"></span></a>
-                                                <a href="#"><span class="fa fa-linkedin"></span></a>
-                                                <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>Sanish Maharjan</h4>
-                                            <span>Graphics Designer</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="mu-our-teacher-single">
+                                    <figure class="mu-our-teacher-img">
+                                        <img src="assets/img/teachers/teacher-04.png" alt="teacher img">
+                                        <div class="mu-our-teacher-social">
+                                            <a href="#"><span class="fa fa-facebook"></span></a>
+                                            <a href="#"><span class="fa fa-twitter"></span></a>
+                                            <a href="#"><span class="fa fa-linkedin"></span></a>
+                                            <a href="#"><span class="fa fa-google-plus"></span></a>
                                         </div>
+                                    </figure>
+                                    <div class="mu-ourteacher-single-content">
+                                        <h4>Sanish Maharjan</h4>
+                                        <span>Graphics Designer</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod
+                                            pariatur recusandae odio dignissimos. Eligendi.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- End our teacher content -->
                     </div>
+                    <!-- End our teacher content -->
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End our teacher -->
+    </div>
+</section>
+<!-- End our teacher -->
 {{--
 
     <!-- Start our teacher -->
@@ -443,7 +452,7 @@
 
 @endsection
 
-    {{--
+{{--
     <div id="container">
         <video id="vid" width="1400" height="400" controls autoplay>
             <source src="frontend/videos/video.mp4">
@@ -603,5 +612,3 @@
     </div>
 --}}{{--
 --}}
-
-
