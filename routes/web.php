@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,7 +35,7 @@ Route::group(['middleware' => ['auth','admin']],function(){
  
 
       Route::group(['namespace' => 'backend', 'prefix' =>'laravel-admin'], function () {
-          Route::any('/', 'DashboardController@index')->name('admin');
+          Route::any('/', 'DashboardController@index')->name('admin')->middleware('auth');
          
           Route::group(['prefix' => 'slider'], function () {
             Route::any('add_slider', 'SliderController@add_slider')->name('add_slider');
