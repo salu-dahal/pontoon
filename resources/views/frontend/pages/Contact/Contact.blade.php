@@ -68,12 +68,26 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-12" style="text-align:center;">
-            <h3>For Further More Enquiry:</h3>
-            <i class="fa fa-phone">+977-9876543210/01-4343432</i>
-        </div>
+        </div> 
 </section>
+<div class="col-md-12 text-center">
+    <h4>For Further Enquiry</h4>
+    <h5>Visit, Call Or Email Us At:</h5>
+    <hr>
+    <div class="Location">
+        <i class="fa fa-home fa-2x"></i>
+        <h4>Laxmi Plaza, Putalisadak <h4>
+                <h5> Kathmandu, Nepal </h5>
+    </div>
+    <div class="Contact">
+        <i class="fa fa-mobile fa-2x"></i>
+        <h4>+977-9876543210 / 01-4321987<h4>
+    </div>
+    <div>
+        <i class="fa fa-envelope fa-2x"></i>
+        <h5>abcd@gmail.com</h5>
+    </div>
+</div>
 
 
 <!-- End contact  -->
