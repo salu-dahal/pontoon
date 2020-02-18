@@ -4,7 +4,6 @@
 <video autoplay muted loop style="height: 100%; width: 100%;">
     <source src="frontend/images/video.mp4" type="video/mp4">
 </video>
-
 <section id="mu-slider">
     <!-- Start single slider item -->
     <div class="mu-slider-single">
@@ -85,4 +84,14 @@
     <a href="{{route('AboutUs')}}" button type="button" class="display btn btn-success">About the team</button></a>
 </div>
 
+<<<<<<< HEAD
 @endsection
+=======
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+
+    </div>
+--}}{{--
+--}}
+>>>>>>> ec28741d177cdf693d1dce0dc2a4eb26872df4a9
