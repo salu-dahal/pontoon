@@ -11,8 +11,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-  Route::get('/', function () {
-    return view('welcome');
+  Route::get('home', function () {
+    return view('home');
 
 });
 Route::group(['middleware' => ['auth','admin']],function(){
@@ -25,6 +25,7 @@ Route::group(['middleware' => ['auth','admin']],function(){
     Route:: any('AboutUs','ApplicationController@AboutUs')->name('AboutUs');
     Route:: any('Contact','ApplicationController@Contact')->name('Contact');
     Route:: any('Services','ApplicationController@Services')->name('Services');
+    Route:: any('Career','ApplicationController@Career')->name('Career');
     Route:: any('slider','SliderController@slider')->name('slider');
     Route:: any('Graphicdesigner','ApplicationController@Graphicdesigner')->name('Graphicdesigner');
     Route:: any('Motiondesigner','ApplicationController@Motiondesigner')->name('Motiondesigner');
@@ -34,22 +35,24 @@ Route::group(['middleware' => ['auth','admin']],function(){
  
 
       Route::group(['namespace' => 'backend', 'prefix' =>'laravel-admin'], function () {
-          Route::any('/', 'DashboardController@index')->name('admin');
+          Route::any('/', 'DashboardController@index')->name('admin')->middleware('auth');
          
           Route::group(['prefix' => 'slider'], function () {
             Route::any('add_slider', 'SliderController@add_slider')->name('add_slider');
             Route::any('edit_slider/{id?}', 'SliderController@edit_slider')->name('edit_slider');
             Route::any('show', 'SliderController@show')->name('show');
             Route::get('delete-show/{id}', 'SliderController@delete_show')->name('delete-show');
-          
-
-          });
-          
-
-      Route::any('admin-logout', 'AdminController@logout')->name('admin-logout');
+            Route::get('Career_applicants', 'SliderController@Career_applicants')->name('Career_applicants');
+            Route::get('delete-Career_applicants/{id}', 'SliderController@delete_Career_applicants')->name('delete-Career_applicants');
 
           });
 
-Auth::routes();
+        });
 
-Route::get('/home', 'HomeController@index')->name('home');
+        Route::group(['middleware' => 'prevent-back-history'],function(){
+          Auth::routes();
+          Route::get('/home', 'HomeController@index')->name('home');
+        });
+
+          
+

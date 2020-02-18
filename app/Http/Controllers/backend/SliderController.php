@@ -3,17 +3,19 @@
 namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
+use App\Model\Career;
 use App\Model\Slide;
 use Illuminate\Http\Request;
 use File;
 
 class SliderController extends backendController
 {
-    // function __construct()
-    // {
-    //     $this->middleware('auth');
-        
-    // }
+    
+    public function Career_applicants(){
+        $careers = Career::all();
+                
+        return view($this->pagePath. 'Career_applicants.Career_applicants')->with('careers',$careers);
+    }
     public function slider(Request $request)
     {
         $slider= Slide::all();
@@ -56,46 +58,44 @@ class SliderController extends backendController
             }
         }
     }
-
-
-    // public function edit_slider(Request $request)
+    public function delete_Career_applicants($id)
+    {
+        $data = new Career();
+        $data=$data->where('id',$id);
+        $data->delete();
+        return redirect()->back()->with('success', 'Details Deleted');
+    }
+    // public function delete_file($id)
     // {
-    //     if ($request->isMethod('get')) {
-    //         $finddata =Slide::where('id','=',$request->id)->first();
-    //         $this->data('slide', $finddata);
-    //         $this->data('title', $this->title('Edit Slider'));
-    //         return view($this->pagePath . 'slider.edit_slider', $this->data);
+    //     $findData = Career::findorfail($id);
+    //     $fileName = $findData->image;
+    //     $deletePath = public_path('images/demands/' . $fileName);
+    //     if (file_exists($deletePath) && is_file($deletePath)) {
+    //         unlink($deletePath);
     //     }
-    //     if ($request->isMethod('post')) {
-    //         $id = $request->id;
-    //         $request->validate([
-    //             'title' => 'required',
-    //             'description' => 'required',
-    //             'image' => 'max:20480'
-    //         ]);
-    //         // $data= $request->all();
-    //         // $slide=new Slide();
-
-    //         if ($request->hasFile('image')){
-    //             $this->delete_file($id);
-    //             $path = public_path().'/images';
-    //             if(!File::exists($path)){
-    //                 File::makeDirectory($path,0777,true,true);
-    //             }
-    //             $file_name="image-".time().".".$request->image->getClientOriginalExtension();
-    //             $request->image->move($path,$file_name);
-    //             $data['image']=$file_name;
-    //             $create= Slide::findorfail($id);
-    //             if ($create->update($data)){
-    //                 return redirect('slider.show')->with('success', 'Details Updated');
-    //             }
-       
-    //                              }
-    
-
-
-    //                                      }
+    //     return true;
     // }
+
+    public function delete_show($id)
+    {
+        $find = Slide::findorfail($id);
+        $this->delete_file($id);
+
+        if ($find->delete()) {
+            return redirect()->back()->with('success', 'Details Deleted');
+        }
+    }
+    public function delete_file($id)
+    {
+        $findData = Slide::findorfail($id);
+        $fileName = $findData->image;
+        $deletePath = public_path('images/' . $fileName);
+        if (file_exists($deletePath) && is_file($deletePath)) {
+            unlink($deletePath);
+        }
+        return true;
+    }
+
     
     public function edit_slider(Request $request)
     {
